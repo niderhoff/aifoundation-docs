@@ -2,15 +2,8 @@
 title: "Overview"
 ---
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
-
+import { LinkCard, TabItem, Tabs } from '@astrojs/starlight/components';
 import AvailableModels from '../../../components/AvailableModels.astro';
-
-<div class="hero-section">
-
-# AI Foundation Services
-
-**GDPR-compliant LLM APIs. OpenAI-compatible. Hosted in Germany.**
 
 Access 20+ open-source and proprietary LLMs through a single, OpenAI-compatible API. Switch from OpenAI with one line of code. Your data stays in the EU.
 
@@ -20,11 +13,9 @@ Access 20+ open-source and proprietary LLMs through a single, OpenAI-compatible 
   <span class="hero-badge">OpenAI Compatible</span>
 </div>
 
-<div class="hero-ctas">
-  <a class="button button--primary button--lg" href="https://apikey.llmhub.t-systems.net/">Get Free API Key</a>
-  <a class="button button--secondary button--lg" href="/getting-started/quickstart">Quickstart Guide</a>
-</div>
-
+<div class="link-card-row">
+<LinkCard title="Get Free API Key" href="https://apikey.llmhub.t-systems.net/" description="Request a trial API key to start building." />
+<LinkCard title="Quickstart Guide" href="/v1/getting-started/quickstart" description="Get up and running in under 5 minutes." />
 </div>
 
 ---
@@ -103,24 +94,15 @@ Drop in your API key and start building — the API is identical to OpenAI's:
 
 <AvailableModels/>
 
-For the complete list with pricing, see the [Plans & Pricing](/plans-page) page.
+For the complete list with pricing, see the [Plans & Pricing](/v1/plans) page.
 
 ---
 
 
 ## Get Started
 
-<div class="get-started-grid">
-  <a class="get-started-card" href="/getting-started/authentication">
-    <h3>Authentication</h3>
-    <p>Set up your API key and environment.</p>
-  </a>
-  <a class="get-started-card" href="/getting-started/quickstart">
-    <h3>Quickstart</h3>
-    <p>Make your first API call in 5 minutes.</p>
-  </a>
-  <a class="get-started-card" href="/reference/api-endpoints">
-    <h3>API Reference</h3>
-    <p>Explore all available endpoints.</p>
-  </a>
+<div class="link-card-row">
+<LinkCard title="Authentication" href="/v1/getting-started/authentication" description="Set up your API key and environment." />
+<LinkCard title="Quickstart" href="/v1/getting-started/quickstart" description="Make your first API call in 5 minutes." />
+<LinkCard title="API Reference" href="/v1/reference/api-endpoints" description="Explore all available endpoints." />
 </div>

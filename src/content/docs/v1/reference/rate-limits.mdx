@@ -20,7 +20,7 @@ Rate limits protect the service and ensure fair usage. Limits are defined per pl
 | **Tokens per Minute (TPM)** | 18,750 input | Up to 150,000 input |
 | **Requests per Minute (RPM)** | 20 | Up to 600 |
 
-Exact limits vary by model. See the [Plans & Pricing](/plans-page) page for per-model details, or download the [Service Description PDF](/files/Leistungsbeschreibung-LLM-Serving-Service.pdf).
+Exact limits vary by model. See the [Plans & Pricing](/v1/plans) page for per-model details, or download the [Service Description PDF](/files/Leistungsbeschreibung-LLM-Serving-Service.pdf).
 
 ---
 
@@ -110,7 +110,7 @@ When you exceed a rate limit, the API returns a `429 Too Many Requests` error. B
 2. **Implement exponential backoff** — Wait longer between retries
 3. **Batch requests** — Combine multiple small requests into fewer larger ones
 4. **Cache responses** — Avoid repeating identical requests
-5. **Use the Queue API** — For batch workloads, use [asynchronous requests](/guides/asynchronous-requests) to spread load
+5. **Use the Queue API** — For batch workloads, use [asynchronous requests](/v1/guides/asynchronous-requests) to spread load
 
 ```python
 import time

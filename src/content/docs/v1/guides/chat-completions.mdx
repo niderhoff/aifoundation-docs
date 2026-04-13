@@ -12,7 +12,7 @@ The Chat Completions API is the primary way to interact with LLMs on AI Foundati
 
 :::note[Prerequisites]
 - An API key ([get one here](https://apikey.llmhub.t-systems.net/))
-- OpenAI SDK or HTTP client installed ([Quickstart](/getting-started/quickstart))
+- OpenAI SDK or HTTP client installed ([Quickstart](/v1/getting-started/quickstart))
 :::
 
 **What you'll learn:**
@@ -102,7 +102,7 @@ for chunk in stream:
         print(chunk.choices[0].delta.content, end="", flush=True)
 ```
 
-For full streaming documentation including error handling, function calling with streams, and stream options, see the **[Streaming guide](/guides/streaming)**.
+For full streaming documentation including error handling, function calling with streams, and stream options, see the **[Streaming guide](/v1/guides/streaming)**.
 
 ---
 
@@ -198,7 +198,7 @@ For the full API specification, see the [API Reference](https://llm-server.llmhu
 
 ## Next Steps
 
-- [Streaming](/guides/streaming) — Stream responses token-by-token
-- [Function Calling](/guides/function-calling) — Connect models to external tools
-- [Multimodal](/guides/multimodal) — Analyze images alongside text
-- [Asynchronous Requests](/guides/asynchronous-requests) — Queue-based processing for batch workloads
+- [Streaming](/v1/guides/streaming) — Stream responses token-by-token
+- [Function Calling](/v1/guides/function-calling) — Connect models to external tools
+- [Multimodal](/v1/guides/multimodal) — Analyze images alongside text
+- [Asynchronous Requests](/v1/guides/asynchronous-requests) — Queue-based processing for batch workloads

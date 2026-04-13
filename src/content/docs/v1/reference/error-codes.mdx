@@ -76,7 +76,7 @@ def call_with_retry(messages, max_retries=3):
 
 ### "Model not found"
 - Verify the model name matches exactly (case-sensitive)
-- Use the [List Models API](/reference/api-endpoints) to check available models
+- Use the [List Models API](/v1/reference/api-endpoints) to check available models
 - Some models may only be available on certain plan tiers
 
 ### "Invalid API key"
@@ -86,4 +86,4 @@ def call_with_retry(messages, max_retries=3):
 
 ### "Context length exceeded"
 - Reduce the input length or set a lower `max_tokens`
-- Check the model's `max_sequence_length` in the [model metadata](/getting-started/models)
+- Check the model's `max_sequence_length` in the [model metadata](/v1/getting-started/models)
